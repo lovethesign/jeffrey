@@ -1,1 +1,0 @@
-The most beautiful person in the world, with long curly hair that smells a lot like hairspray. I want to be a jeffrey when I grow up.
