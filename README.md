@@ -29,7 +29,7 @@ jeffrey is a style guide and pattern library for building websites rapidly, desi
 ### Installation
 
 ```
-npm install @lts/jeffrey --save
+npm install jeffrey-suits --save
 ```
 
 [tired of having to install NodeJS on your PC?](https://medium.com/@massimoruggirello/become-a-better-front-end-developer-with-docker-3249a7d61b74)
@@ -41,7 +41,7 @@ npm install @lts/jeffrey --save
 Include this in your ```<head>```:
 
 ```html
-<link href="node_modules/jeffrey/dist/css/jeffrey.min.css" rel="stylesheet">
+<link href="node_modules/jeffrey-suits/dist/css/jeffrey.min.css" rel="stylesheet">
 ```
 
 
@@ -50,7 +50,7 @@ Include this in your ```<head>```:
 If you are already using Sass in your project, you can import the jeffrey directly.
 
 ```scss
-@import "node_modules/jeffrey/dist/sass/jeffrey";
+@import "node_modules/jeffrey-suits/dist/sass/jeffrey";
 ```
 
 ## License

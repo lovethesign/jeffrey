@@ -45,10 +45,10 @@ gulp.task('dist:styles', function () {
     return gulp.src('./src/styles/index.scss')
         .pipe(helper.sass())
         .pipe(autoprefixer('last 2 version'))
-        .pipe(rename(pkg.name + '.css'))
+        .pipe(rename('jeffrey' + '.css'))
         .pipe(gulp.dest(path.join('.tmp/dist', 'css')))
         // minified
-        .pipe(rename(pkg.name + '.min.css'))
+        .pipe(rename('jeffrey' + '.min.css'))
         .pipe(csso())
         .pipe(gulp.dest(path.join('.tmp/dist', 'css')));
 });
