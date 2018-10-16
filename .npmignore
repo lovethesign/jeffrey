@@ -1,0 +1,14 @@
+node_modules
+
+.*
+
+demo
+src
+docs
+webpack.demo.config.js
+gulpfile.js
+gulp
+tests
+
+yarn.lock
+package-lock.json

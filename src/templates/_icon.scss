@@ -1,0 +1,69 @@
+//
+// !!!
+// This file is generated with a gulp task.
+// DO NOT TOUCH this file directly.
+// !!!
+//
+// The template for the generation is located under src/templates/_icon.scss
+//
+
+////
+/// @group icons
+////
+
+/// base mixin applying DressCodeIcons font to :before pseudo-element
+@mixin <%= cssClass%> {
+    &:before {
+        font-family: "<%= fontName %>";
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+        text-decoration: none;
+        text-transform: none;
+        color: inherit;
+    }
+}
+
+/// Get the character representing a font icon
+/// @param {string} $name - icon name (eg. close)
+/// @returns {string} utf-8 character representing the icon
+@function <%= cssClass%>-char($filename) {
+    $char: "";
+    <% _.each(glyphs, function(glyph) { %>
+    @if $filename == <%= glyph.name %> {
+        $char: "\<%= glyph.codepoint %>";
+    }<% }); %>
+
+    @return $char;
+}
+
+// BEM modifiers mixins
+<% _.each(glyphs, function(glyph) { %>@mixin <%= cssClass%>--<%= glyph.name %> {
+    &:before {
+        content: <%= cssClass%>-char(<%= glyph.name  %>);
+    }
+}
+<% }); %>
+
+@mixin <%= cssClass%>-generated-selectors {
+    @font-face {
+        font-family: "<%= fontName %>";
+        src: url('#{$dc-font-path}/<%= fontName %>.eot<%= cacheBustingString %>');
+        src: url('#{$dc-font-path}/<%= fontName %>.eot?#iefix') format('eot'),
+        url('#{$dc-font-path}/<%= fontName %>.woff<%= cacheBustingString %>') format('woff'),
+        url('#{$dc-font-path}/<%= fontName %>.ttf<%= cacheBustingString %>') format('truetype'),
+        url('#{$dc-font-path}/<%= fontName %>.svg<%= cacheBustingString %>#<%= fontName %>') format('svg');
+    }
+
+    .<%= cssClass%> {
+        @include <%= cssClass%>;
+    }
+    <% _.each(glyphs, function(glyph) { %>
+
+    .<%= cssClass%>--<%= glyph.name %> {
+        @include <%= cssClass%>--<%= glyph.name %>;
+    }<% }); %>
+}
