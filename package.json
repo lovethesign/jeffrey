@@ -1,0 +1,38 @@
+{
+  "name": "@lts/jeffrey",
+  "version": "0.1.0",
+  "description": "jeffrey is a style guide and pattern library for building websites rapidly, designed for maintainability and modularity.",
+  "main": "dist/sass/jeffrey.scss",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovethesign/jeffrey.git"
+  },
+  "authors": [
+    "Massimo Ruggirello <mruggirello@lovethesign.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lovethesign/jeffrey/issues"
+  },
+  "homepage": "https://lovethesign.github.io/jeffrey",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "lodash": "^4.17.11",
+    "path": "^0.12.7",
+    "require-dir": "^1.1.0",
+    "rimraf": "^2.6.2",
+    "run-sequence": "^2.2.1",
+    "gulp-sass-lint": "^1.4.0"
+  }
+}
