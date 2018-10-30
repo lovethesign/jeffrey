@@ -7,7 +7,6 @@
  *
  *
  */
-var pkg = require('../package.json');
 var path = require('path');
 var rimraf = require('rimraf');
 var gulp = require('gulp');
@@ -28,13 +27,13 @@ gulp.task('dist:build', function (done) {
     return runSequence('dist:clean', ['dist:styles', 'dist:styles:src'], done);
 });
 
+gulp.task('dist:clean-dist', function (done) {
+    return rimraf('dist', done);
+});
+
 gulp.task('dist:copy-dist', function () {
     return gulp.src(path.join('.tmp/dist', '/**/*'))
         .pipe(gulp.dest('dist'));
-});
-
-gulp.task('dist:clean-dist', function (done) {
-    return rimraf('dist', done);
 });
 
 gulp.task('dist:clean', function (done) {
