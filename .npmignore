@@ -2,6 +2,6 @@ node_modules
 .*
 docs
 gulp
-gulp.js
+gulpfile.js
 src
 package-lock.json
