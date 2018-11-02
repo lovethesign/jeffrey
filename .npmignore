@@ -1,7 +1,10 @@
 node_modules
 .*
+_*
 docs
 gulp
 gulpfile.js
 src
 package-lock.json
+webpack.config.js
+fabricator
