@@ -47,7 +47,7 @@ Include this in your ```<head>```:
 
 #### How to use jeffrey with Sass
 
-If you are already using Sass in your project, you can import the jeffrey directly.
+If you are already using Sass in your project, you can import jeffrey directly.
 
 ```scss
 @import "node_modules/jeffrey-suits/dist/sass/jeffrey";
