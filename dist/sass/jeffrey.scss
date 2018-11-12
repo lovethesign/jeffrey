@@ -1,8 +1,4 @@
-// Colors ----------------------------------------------------------------------
-
-$color-brand: #dd4a5f;
-$color-secondary: #444;
-
-// Grid ------------------------------------------------------------------------
-
-$grid-columns: 12;
+@import "partials/variables";
+@import "partials/colors";
+@import "partials/layout";
+@import "partials/spacing";

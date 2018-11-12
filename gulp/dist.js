@@ -41,7 +41,7 @@ gulp.task('dist:clean', function (done) {
 });
 
 gulp.task('dist:styles', function () {
-    return gulp.src('./src/styles/index.scss')
+    return gulp.src('./src/styles/jeffrey.scss')
         .pipe(helper.sass())
         .pipe(autoprefixer('last 2 version'))
         .pipe(rename('jeffrey' + '.css'))
