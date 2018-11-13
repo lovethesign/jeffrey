@@ -7,6 +7,31 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
+}
+
+.lts-flex--row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.lts-flex--column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .lts-main {
@@ -14,7 +39,7 @@ body {
   margin: 0 auto;
 }
 
-.lts-item-listing {
+.lts-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,17 +49,24 @@ body {
           flex-flow: row wrap;
   width: 100%;
   margin: 0 auto;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+}
+
+.lts-grid-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 97%;
+          flex: 0 0 97%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 1.5% 1.5em;
 }
 
 .lts-item-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
@@ -47,38 +79,33 @@ body {
 
 .lts-item-card img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
-@media screen and (min-width: 38em) {
-  .lts-item-listing {
-    max-width: 38em;
-  }
-  .lts-item-card {
+@media screen and (min-width: 320px) {
+  .lts-grid-item--3,
+  .lts-grid-item--4 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 33%;
-            flex: 0 0 33%;
-  }
-}
-
-@media screen and (min-width: 46.25em) {
-  .lts-item-listing {
-    max-width: 46.25em;
-  }
-  .lts-item-card {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 33%;
-            flex: 0 0 33%;
+        -ms-flex: 0 0 47%;
+            flex: 0 0 47%;
   }
 }
 
-@media screen and (min-width: 60em) {
-  .lts-item-listing {
-    max-width: 60em;
-  }
-  .lts-item-card {
+@media screen and (min-width: 600px) {
+  .lts-grid-item--3,
+  .lts-grid-item--4 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-            flex: 0 0 25%;
+        -ms-flex: 0 0 30.3333%;
+            flex: 0 0 30.3333%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .lts-grid-item--4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 22%;
+            flex: 0 0 22%;
+    margin: 0 1.5% 1.5em;
   }
 }
