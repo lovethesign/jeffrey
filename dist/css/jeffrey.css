@@ -60,3 +60,25 @@ body {
             flex: 0 0 33%;
   }
 }
+
+@media screen and (min-width: 46.25em) {
+  .lts-item-listing {
+    max-width: 46.25em;
+  }
+  .lts-item-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33%;
+            flex: 0 0 33%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .lts-item-listing {
+    max-width: 60em;
+  }
+  .lts-item-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
+}
