@@ -1,0 +1,70 @@
+.#{$prefix}-listing-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.#{$prefix}-card-container {
+    /* margin: auto; */
+    position: relative;
+    flex: 0 0 100%;
+    max-width: 320px;
+    height: auto;
+    margin-bottom: 24px;
+}
+
+.#{$prefix}-card-container svg {
+    display: inline-block;
+}
+
+.#{$prefix}-item-info {
+    padding-top: .5em;
+}
+
+.#{$prefix}-item-info svg {
+    position: absolute;
+    right: .5em;
+    margin-top: -.5em;
+    padding: .5em;
+}
+
+.#{$prefix}-card-img {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    background-color: #f3f3f3;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.#{$prefix}-card-img img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 350px;
+    color: transparent;
+    vertical-align: bottom;
+}
+
+.#{$prefix}-card-label {
+    position: absolute;
+    bottom: 2em;
+    padding: .5em 1em;
+    background-color: white;
+}
+
+.#{$prefix}-item-title {
+    display: block;
+}
+
+.#{$prefix}-card-price,
+.#{$prefix}-card-price-orig,
+.#{$prefix}-card-price-discount {
+    display: inline-block;
+}
+
+.#{$prefix}-card-price-orig {
+    text-decoration: line-through;
+}

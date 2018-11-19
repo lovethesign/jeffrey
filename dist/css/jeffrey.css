@@ -109,3 +109,83 @@ body {
     margin: 0 1.5% 1.5em;
   }
 }
+
+.lts-listing-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lts-card-container {
+  /* margin: auto; */
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 320px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.lts-card-container svg {
+  display: inline-block;
+}
+
+.lts-item-info {
+  padding-top: .5em;
+}
+
+.lts-item-info svg {
+  position: absolute;
+  right: .5em;
+  margin-top: -.5em;
+  padding: .5em;
+}
+
+.lts-card-img {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  background-color: #f3f3f3;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  overflow: hidden;
+}
+
+.lts-card-img img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: 350px;
+  color: transparent;
+  vertical-align: bottom;
+}
+
+.lts-card-label {
+  position: absolute;
+  bottom: 2em;
+  padding: .5em 1em;
+  background-color: white;
+}
+
+.lts-item-title {
+  display: block;
+}
+
+.lts-card-price,
+.lts-card-price-orig,
+.lts-card-price-discount {
+  display: inline-block;
+}
+
+.lts-card-price-orig {
+  text-decoration: line-through;
+}

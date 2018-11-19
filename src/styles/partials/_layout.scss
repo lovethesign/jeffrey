@@ -2,7 +2,7 @@
 // LAYOUT
 //----------------------------------
 
-// $grid-columns: 12;
+// Import dependencies
 @import "spacing";
 
 // MAIN BREAKPOINTS
@@ -20,7 +20,7 @@ $gutter: $spacing-base * 0.5;            // 8px
 $gutter--medium: $spacing-base;          // 16px
 $gutter--large: $spacing-base * 1.5;     // 24px
 
-// mixins
+// Mixins
 
 
 // html, body
