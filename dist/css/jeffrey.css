@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
 html {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
   font-size: 1em;
   line-height: 1.25;
   -webkit-text-size-adjust: 100%;
@@ -142,10 +143,9 @@ body {
   padding-top: .5em;
 }
 
-.lts-item-info svg {
+.lts-card-info-container a svg {
   position: absolute;
   right: .5em;
-  margin-top: -.5em;
   padding: .5em;
 }
 
@@ -171,6 +171,7 @@ body {
 
 .lts-card-label {
   position: absolute;
+  right: 0;
   bottom: 2em;
   padding: .5em 1em;
   background-color: white;
@@ -188,4 +189,103 @@ body {
 
 .lts-card-price-orig {
   text-decoration: line-through;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  padding: 0 .5em .5em 0;
+}
+
+.lts-card-container {
+  font-family: "Open Sans", sans-serif;
+}
+
+.lts-card-label {
+  background-color: #fafafa;
+  color: dimgray;
+  font-size: 0.875em;
+  font-weight: 700;
+}
+
+.lts-item-brand {
+  color: darkgrey;
+  font-family: "Merriweather",serif;
+  font-size: .825em;
+  font-style: italic;
+}
+
+.lts-item-title {
+  padding-top: .5em;
+  color: black;
+  font-size: 1.25em;
+}
+
+.lts-item-price-sell {
+  color: #1f1f1f;
+  font-size: 1.125em;
+  font-weight: lighter;
+}
+
+.lts-item-price-original {
+  color: gray;
+  font-size: 1em;
+  text-decoration: line-through;
+}
+
+.lts-item-price-discount {
+  color: #a80000;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.lts-card-extras {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em;
+}
+
+.lts-card-extra-love,
+.lts-card-extra-fast-ship {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: .25em auto;
+  padding: 0 .5em;
+  padding-top: .5em;
+  border-radius: 3px;
+  color: white;
+  font-size: 0.875em;
+  font-weight: 700;
+}
+
+.lts-card-extra-love {
+  background-color: #DF5566;
+}
+
+.lts-card-extra-fast-ship {
+  background-color: #2a669e;
+}
+
+.lts-card-extra-love svg,
+.lts-card-extra-fast-ship svg {
+  padding-right: .5em;
+  padding-left: .5em;
+  fill: white;
 }
