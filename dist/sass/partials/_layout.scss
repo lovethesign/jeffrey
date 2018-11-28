@@ -1,0 +1,84 @@
+//----------------------------------
+// LAYOUT
+//----------------------------------
+
+// $grid-columns: 12;
+@import "spacing";
+
+// MAIN BREAKPOINTS
+
+$breakpoints: (   // multiple values for one 'key' = $brekpoints
+    sm: 320px,
+    md: 768px,
+    lg: 960px,
+    xl: 1200px,
+);
+
+// Layout setup
+
+$gutter: $spacing-base * 0.5;            // 8px
+$gutter--medium: $spacing-base;          // 16px
+$gutter--large: $spacing-base * 1.5;     // 24px
+
+// mixins
+
+
+// html, body
+html {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    line-height: 1.25;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+// FLEXBOX
+
+.#{$prefix}-flex--row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.#{$prefix}-flex--column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+// Layout rules
+
+.#{$prefix}-main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.#{$prefix}-grid {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.#{$prefix}-grid-item {
+    flex: 0 0 97%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 1.5% 1.5em;
+}
+
+.#{$prefix}-item-card {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.#{$prefix}-item-card img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}

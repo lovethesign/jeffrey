@@ -1,0 +1,27 @@
+//----------------------------------
+// MEDIA QUERIES
+//----------------------------------
+
+@import "variables";
+
+
+@media screen and (min-width: 320px) {
+    .#{$prefix}-grid-item--3,
+    .#{$prefix}-grid-item--4 {
+        flex: 0 0 47%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .#{$prefix}-grid-item--3,
+    .#{$prefix}-grid-item--4 {
+        flex: 0 0 30.3333%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .#{$prefix}-grid-item--4 {
+        flex: 0 0 22%;
+        margin: 0 1.5% 1.5em;
+    }
+}

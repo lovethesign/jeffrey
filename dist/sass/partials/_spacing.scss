@@ -1,0 +1,28 @@
+//----------------------------------
+// SPACING
+//----------------------------------
+//
+//    Spacing in px with a base value of 16px
+//
+//    Layout Scale
+//    =====================
+//    2xs  | 8px
+//    xs   | 16px
+//    sm   | 24px
+//    md   | 32px
+//    lg   | 48px
+//    xl   | 64px
+//    2xl  | 96px
+//    3xl  | 160px
+//    =====================
+
+$spacing-base: 1em !default;
+
+$layout-2xs: $spacing-base * 0.5 !default;
+$layout-xs: $spacing-base !default;
+$layout-sm: $spacing-base * 1.5 !default;
+$layout-md: $spacing-base * 2 !default;
+$layout-lg: $spacing-base * 3 !default;
+$layout-xl: $spacing-base * 4 !default;
+$layout-2xl: $spacing-base * 6 !default;
+$layout-3xl: $spacing-base * 10 !default;
