@@ -15,6 +15,11 @@ const pages = [
         path: '/grid',
         title: 'Grid',
         content: pageLoader(() => import("./Elements/GRID.md"))
+      },
+      {
+        path: '/card',
+        title: 'Card',
+        content: pageLoader(() => import("./Elements/CARD.md"))
       }
     ]
   },
