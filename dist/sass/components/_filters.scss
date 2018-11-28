@@ -32,8 +32,8 @@
 }
 
 .#{$prefix}-filter-cat-title {
-    padding-bottom: 1em;
-    font-size: 1.1em;
+    font-size: 1em;
+    font-weight: bolder;
 }
 
 label {
@@ -58,8 +58,8 @@ input[type="radio"]{
     position: relative;
     width: 0;
     height: 0;
-    cursor: pointer;
     opacity: 0;
+    // cursor: pointer;
 }
 
 /* Create a custom checkbox */
@@ -80,7 +80,7 @@ input[type="radio"]{
     background-color: #ccc;
 }
 
-/* When the checkbox is checked, add a blue background */
+/* When the checkbox is checked, add a color background */
 .#{$prefix}-filter-item input:checked ~ .#{$prefix}-checkbox {
     background-color: rgb(0, 0, 0);
 }
@@ -120,7 +120,10 @@ input[type="radio"]{
 /* Horizontal scrolling */
 .#{$prefix}-scrolling-wrapper-flexbox {
     display: flex;
+    position: absolute;
     flex-wrap: nowrap;
+    width: calc(100vw - 0.5em);
+    max-height: 60%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
@@ -133,10 +136,15 @@ input[type="radio"]{
 }
 
 .#{$prefix}-card:last-child {
-    flex: 0 0 100%;
+    flex: 1 0 100%;
 }
 
 .#{$prefix}-card {
-    flex: 0 0 85%;
+    flex: 1 0 85%;
+    min-height: 0px;
+    overflow-y: auto;
     scroll-snap-align: start;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
