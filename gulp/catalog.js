@@ -19,16 +19,12 @@ var helper = require('./util/helper');
 
 // build and copy the result in the official versioned distribution folder (dist)
 gulp.task('catalog', function (done) {
-    return runSequence('lint', 'catalog:build', 'catalog:clean-dist', 'catalog:copy-dist', done);
+    return runSequence('lint', 'catalog:build', 'catalog:copy-dist', 'catalog:copy-catalog', done);
 });
 
 // build all distribution artifacts in a tmp folder
 gulp.task('catalog:build', function (done) {
     return runSequence('catalog:clean', ['catalog:styles'], done);
-});
-
-gulp.task('catalog:clean-dist', function (done) {
-    return rimraf('dist', done);
 });
 
 gulp.task('catalog:copy-dist', function () {
@@ -52,7 +48,7 @@ gulp.task('catalog:styles', function () {
         .pipe(gulp.dest(path.join('.tmp/catalog', 'css')));
 });
 
-// gulp.task('catalog:styles:src', function () {
-//     return gulp.src(['./src/styles/**/*', '!src/styles/index.scss'])
-//         .pipe(gulp.dest(path.join('./.tmp/catalog', 'sass')));
-// });
+gulp.task('catalog:copy-catalog', function () {
+    return gulp.src(path.join('catalog/build/', '/**/*'))
+        .pipe(gulp.dest('docs/'));
+});
