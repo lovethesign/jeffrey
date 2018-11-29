@@ -15,11 +15,21 @@ const pages = [
         path: '/grid',
         title: 'Grid',
         content: pageLoader(() => import("./Elements/GRID.md"))
-      },
+      }
+    ]
+  },
+  {
+    title: 'Components',
+    pages: [
       {
         path: '/card',
         title: 'Card',
-        content: pageLoader(() => import("./Elements/CARD.md"))
+        content: pageLoader(() => import("./Components/CARD.md"))
+      },
+      {
+        path: '/loader',
+        title: 'Loader',
+        content: pageLoader(() => import("./Components/LOADER.md"))
       }
     ]
   },
@@ -35,5 +45,5 @@ const responsiveSizes = [
 
 ReactDOM.render(
   <Catalog title="jeffrey" pages={pages} responsiveSizes={responsiveSizes} />,
-  document.getElementById("catalog")
+  document.getElementById("jeffrey")
 );
