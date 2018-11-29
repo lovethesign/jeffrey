@@ -2,7 +2,7 @@
 responsive: true
 state: {clicked: 0}
 ---
-<div class="lts-loading-spinner">
+<div class="lts-loading-spinner lts-loading-spinner--centered">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     class="lts-rotate"
