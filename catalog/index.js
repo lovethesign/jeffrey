@@ -30,6 +30,11 @@ const pages = [
         path: '/loader',
         title: 'Loader',
         content: pageLoader(() => import("./Components/LOADER.md"))
+      },
+      {
+        path: '/icons',
+        title: 'Icons',
+        content: pageLoader(() => import("./Components/ICONS.md"))
       }
     ]
   },
