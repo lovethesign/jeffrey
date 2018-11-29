@@ -1,6 +1,5 @@
 node_modules
 .*
-_*
 docs
 gulp
 gulpfile.js
