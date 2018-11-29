@@ -6,4 +6,4 @@ gulp
 gulpfile.js
 src
 package-lock.json
-fabricator
+catalog
