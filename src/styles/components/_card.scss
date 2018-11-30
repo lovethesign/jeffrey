@@ -18,13 +18,13 @@
 }
 
 .#{$prefix}-item-info {
-    padding-top: .5em;
+    padding-top: .5rem;
 }
 
 .#{$prefix}-card-info-container a svg {
     position: absolute;
-    right: .5em;
-    padding: .5em;
+    right: .5rem;
+    padding: .5rem;
 }
 
 .#{$prefix}-card-img {
@@ -50,8 +50,8 @@
 .#{$prefix}-card-label {
     position: absolute;
     right: 0;
-    bottom: 2em;
-    padding: .5em 1em;
+    bottom: 2rem;
+    padding: .5rem 1rem;
     background-color: white;
 }
 
@@ -81,7 +81,7 @@ a {
 }
 
 span {
-    padding: 0 .5em .5em 0;
+    padding: 0 .5rem .5rem 0;
 }
 
 .lts-card-container {
@@ -91,21 +91,21 @@ span {
 .lts-card-label {
     background-color: rgb(250, 250, 250);
     color: rgb(105, 105, 105);
-    font-size: 0.875em;
+    font-size: 0.875rem;
     font-weight: 700;
 }
 
 .lts-item-brand {
     color: darkgrey;
     font-family: "Merriweather",serif;
-    font-size: .825em;
+    font-size: .825rem;
     font-style: italic;
 }
 
 .lts-item-title {
-    padding-top: .5em;
+    padding-top: .5rem;
     color: black;
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 .lts-item-prices {
@@ -114,19 +114,19 @@ span {
 
 .lts-item-price-sell {
     color: rgb(31, 31, 31);
-    font-size: 1.125em;
+    font-size: 1.125rem;
     font-weight: lighter;
 }
 
 .lts-item-price-original {
     color: gray;
-    font-size: 1em;
+    font-size: 1rem;
     text-decoration: line-through;
 }
 
 .lts-item-price-discount {
     color: rgb(168, 0, 0);
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -134,7 +134,7 @@ span {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    padding: 1em;
+    padding: 1rem;
 }
 
 .lts-card-extra-love,
@@ -142,12 +142,12 @@ span {
     display: flex;
     flex: 1;
     justify-content: center;
-    margin: .25em auto;
-    padding: 0 .5em;
-    padding-top: .5em;
+    margin: .25rem auto;
+    padding: 0 .5rem;
+    padding-top: .5rem;
     border-radius: 3px;
     color: white;
-    font-size: 0.875em;
+    font-size: 0.875rem;
     font-weight: 700;
 }
 
@@ -161,7 +161,7 @@ span {
 
 .lts-card-extra-love svg,
 .lts-card-extra-fast-ship svg {
-    padding-right: .5em;
-    padding-left: .5em;
+    padding-right: .5rem;
+    padding-left: .5rem;
     fill: white;
 }
