@@ -96,13 +96,12 @@ input[type="radio"]{
 }
 
 .#{$prefix}-btn {
-    min-height: 2em;
-    margin: 1rem 1rem 2em;
-    padding: 1rem 2em;
+    margin: .5rem .5rem 1rem;
+    padding: .5rem 1rem;
 }
 
 .#{$prefix}-btn-label {
-    font-size: 1.4em;
+    font-size: 1rem;
 }
 
 .#{$prefix}-btn--reset {
