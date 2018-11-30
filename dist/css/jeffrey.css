@@ -269,6 +269,16 @@ a {
   font-weight: 700;
 }
 
+.lts-card-extra-love--sx,
+.lts-card-extra-fast-ship--sx {
+  margin-left: 0;
+}
+
+.lts-card-extra-love--dx,
+.lts-card-extra-fast-ship--dx {
+  margin-right: 0;
+}
+
 .lts-card-extra-love {
   background-color: #DF5566;
 }
@@ -283,7 +293,14 @@ a {
 }
 
 .lts-icon {
+  width: 1rem;
+  height: 1rem;
   padding: 0 .25rem;
+}
+
+.lts-grid-1200 {
+  max-width: 1200px;
+  margin: auto;
 }
 
 @-webkit-keyframes lts-animate-rotate {
