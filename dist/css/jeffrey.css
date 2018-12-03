@@ -172,7 +172,7 @@ body {
 .lts-card-label {
   position: absolute;
   right: 0;
-  bottom: 2rem;
+  bottom: 1rem;
   padding: .5rem 1rem;
   background-color: white;
 }
@@ -195,10 +195,6 @@ a {
   text-decoration: none;
 }
 
-span {
-  padding: 0 .5rem .5rem 0;
-}
-
 .lts-card-container {
   font-family: "Open Sans", sans-serif;
 }
@@ -206,38 +202,38 @@ span {
 .lts-card-label {
   background-color: #fafafa;
   color: dimgray;
-  font-size: 0.875rem;
+  font-size: 0.6rem;
   font-weight: 700;
 }
 
 .lts-item-brand {
   color: darkgrey;
   font-family: "Merriweather",serif;
-  font-size: .825rem;
+  font-size: .6rem;
   font-style: italic;
 }
 
 .lts-item-title {
   padding-top: .5rem;
   color: black;
-  font-size: 1.25rem;
+  font-size: .8rem;
 }
 
 .lts-item-price-sell {
   color: #1f1f1f;
-  font-size: 1.125rem;
+  font-size: .8rem;
   font-weight: lighter;
 }
 
 .lts-item-price-original {
   color: gray;
-  font-size: 1rem;
+  font-size: .7rem;
   text-decoration: line-through;
 }
 
 .lts-item-price-discount {
   color: #a80000;
-  font-size: 1rem;
+  font-size: .7rem;
   font-weight: 700;
 }
 
@@ -252,7 +248,6 @@ span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem;
 }
 
 .lts-card-extra-love,
@@ -260,19 +255,28 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: .25rem auto;
-  padding: 0 .5rem;
-  padding-top: .5rem;
-  border-radius: 3px;
+  margin: .5rem auto auto auto;
+  padding: .25rem .5rem;
+  border-radius: 2px;
   color: white;
-  font-size: 0.875rem;
+  font-size: 0.65rem;
   font-weight: 700;
+}
+
+.lts-card-extra-love--sx,
+.lts-card-extra-fast-ship--sx {
+  margin-left: 0;
+}
+
+.lts-card-extra-love--dx,
+.lts-card-extra-fast-ship--dx {
+  margin-right: 0;
 }
 
 .lts-card-extra-love {
@@ -285,9 +289,18 @@ span {
 
 .lts-card-extra-love svg,
 .lts-card-extra-fast-ship svg {
-  padding-right: .5rem;
-  padding-left: .5rem;
   fill: white;
+}
+
+.lts-icon {
+  width: 1rem;
+  height: 1rem;
+  padding: 0 .25rem;
+}
+
+.lts-grid-1200 {
+  max-width: 1200px;
+  margin: auto;
 }
 
 @-webkit-keyframes lts-animate-rotate {
