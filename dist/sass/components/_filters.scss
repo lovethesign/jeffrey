@@ -452,3 +452,31 @@ span {
 .lts-border-b {
     border-bottom: 2px solid grey;
 }
+
+.lts-pagination {
+    display: inline-flex;
+}
+
+.lts-pagination a {
+    flex: 1;
+    justify-content: center;
+    padding: .5rem 1rem;
+    border: 1px solid white;
+    color: grey;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.lts-pagination a:hover {
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+    box-sizing: border-box;
+}
+
+.lts-pagination a:active {
+    background: black;
+    color: white;
+    font-weight: 400;
+    box-sizing: border-box;
+}
