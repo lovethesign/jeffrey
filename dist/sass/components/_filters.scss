@@ -20,11 +20,11 @@
     flex-flow: column wrap;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(240, 240, 240);
 }
 
 .#{$prefix}-filter-header {
-    padding: 1rem 0.5rem 0;
+    padding: 1rem .5rem .5rem;
     font-size: 1.625rem;
     font-weight: lighter;
 }
@@ -47,6 +47,7 @@
 }
 
 .#{$prefix}-filter-cat-title {
+    padding-left: .5rem;
     font-size: 1rem;
     font-weight: bolder;
 }
@@ -108,16 +109,18 @@ input[type="radio"]{
 
 .#{$prefix}-filter-body {
     flex: 1;
-    padding: 0 0 0 0.5rem;
 }
 
 .#{$prefix}-filter-selection {
     display: flex;
     justify-content: center;
+    padding: 1rem;
+    background: white;
 }
 
 .#{$prefix}-btn {
     padding: .5rem 1rem;
+    border: 0px;
 }
 
 .#{$prefix}-btn-label {
@@ -125,12 +128,16 @@ input[type="radio"]{
 }
 
 .#{$prefix}-btn--reset {
+    margin: .25rem;
+    padding: 1rem 2rem;
     background-color: black;
     color: white;
     font-weight: bolder;
 }
 
 .#{$prefix}-btn--primary {
+    margin: .25rem;
+    padding: 1rem 2rem;
     background-color: #DF5566;
     color: white;
     font-weight: bolder;
@@ -141,11 +148,24 @@ input[type="radio"]{
     display: flex;
     position: absolute;
     flex-wrap: nowrap;
-    width: calc(100vw - 0.5rem);
-    max-height: 60%;
+    width: 100%; // calc(100vw - 0.5rem);
+    max-height: 45.5%;
+    border-bottom: 2px solid grey;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
+}
+
+@media (min-height: 667px) {
+    .lts-scrolling-wrapper-flexbox {
+        max-height: 58%;
+    }
+}
+
+@media (min-height: 812px) {
+    .lts-scrolling-wrapper-flexbox {
+        max-height: 64%;
+    }
 }
 
 .#{$prefix}-scrolling-wrapper-flexbox {
@@ -426,5 +446,9 @@ input[type=range]::-moz-range-thumb {
 }
 
 span {
-    padding: 0;
+    padding: 0.25rem
+}
+
+.lts-border-b {
+    border-bottom: 2px solid grey;
 }
