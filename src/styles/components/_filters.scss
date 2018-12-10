@@ -476,3 +476,9 @@ input[type=range]::-moz-range-thumb {
     font-weight: 400;
     box-sizing: border-box;
 }
+
+.lts-pagination-active a {
+    background: transparent;
+    color: #DF5566;
+    font-weight: bolder;
+}
