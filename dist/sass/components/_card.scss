@@ -133,7 +133,8 @@ a {
 }
 
 .lts-card-extra-love,
-.lts-card-extra-fast-ship {
+.lts-card-extra-fast-ship,
+.lts-card-extra-out-stock {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,6 +162,12 @@ a {
 
 .lts-card-extra-fast-ship {
     background-color: rgb(42, 102, 158);
+}
+
+.lts-card-extra-out-stock {
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
 }
 
 .lts-card-extra-love svg,
