@@ -980,3 +980,9 @@ input[type=range]::-moz-range-thumb {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.lts-pagination-active a {
+  background: transparent;
+  color: #DF5566;
+  font-weight: bolder;
+}
