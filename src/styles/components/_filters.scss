@@ -482,3 +482,23 @@ input[type=range]::-moz-range-thumb {
     color: #DF5566;
     font-weight: bolder;
 }
+
+.lts-filter-page--open {
+    display: flex;
+}
+
+.lts-filter-page--close {
+    display: none;
+}
+
+@media screen and (max-width: 399px) {
+    .lts-filter-lg {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .lts-filter-page {
+        display: none;
+    }
+}
