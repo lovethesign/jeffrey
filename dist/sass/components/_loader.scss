@@ -70,6 +70,18 @@
     min-height: 25rem;
 }
 
+.lts-grid--empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 8rem;
+    min-height: 25rem;
+    color: #666;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
 // HTML TEMPLATE
 
 // <div class="lts-grid-1200">
