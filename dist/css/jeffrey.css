@@ -274,7 +274,8 @@ a {
 }
 
 .lts-card-extra-love,
-.lts-card-extra-fast-ship {
+.lts-card-extra-fast-ship,
+.lts-card-extra-out-stock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,6 +309,12 @@ a {
 
 .lts-card-extra-fast-ship {
   background-color: #2a669e;
+}
+
+.lts-card-extra-out-stock {
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
 }
 
 .lts-card-extra-love svg,
@@ -931,10 +938,6 @@ input[type=range]::-moz-range-thumb {
 .lts-price-box::placeholder {
   position: relative;
   padding-left: .25rem;
-}
-
-span {
-  padding: 0.25rem;
 }
 
 .lts-border-b {
