@@ -120,7 +120,7 @@ input[type="radio"]{
 
 .#{$prefix}-btn {
     padding: .5rem 1rem;
-    border: 0px;
+    border: 0 solid transparent;
 }
 
 .#{$prefix}-btn--xs {
