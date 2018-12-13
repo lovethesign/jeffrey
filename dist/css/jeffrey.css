@@ -571,7 +571,7 @@ input[type="radio"] {
       -ms-flex-align: center;
           align-items: center;
   padding: .5rem;
-  font-size: .8rem;
+  font-size: .7rem;
 }
 
 .lts-filter-item:hover {
@@ -1092,6 +1092,27 @@ input[type=range]::-moz-range-thumb {
 }
 
 .lts-filter-page--close {
+  display: none;
+}
+
+.lts-filter-item-mobile {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.lts-checkbox--mobile {
+  min-width: 1rem;
+  min-height: 1rem;
+  margin-right: .25rem;
+}
+
+.lts-filter-container-mobile {
+  min-width: 100px;
+}
+
+input[type=checkbox] {
   display: none;
 }
 
