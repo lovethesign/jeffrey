@@ -123,6 +123,10 @@ input[type="radio"]{
     border: 0px;
 }
 
+.#{$prefix}-btn--xs {
+    padding: .5rem 0;
+}
+
 .#{$prefix}-btn-label {
     font-size: 1rem;
 }
@@ -495,10 +499,47 @@ input[type=range]::-moz-range-thumb {
     .lts-filter-lg {
         display: none;
     }
+
+    
+
+    .lts-filter-container {
+        width: 100%;
+        min-height: 3rem;
+        background: rgb(240, 240, 240);
+    }
+    
+    .lts-filter-container-mobile {
+        display: flex;
+        flex: 0 0 31.3333%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 .5%;
+    }
+    
+    .lts-btn--fast-shipping,
+    .lts-btn--lovepromo,
+    .lts-btn--filters {
+        font-size: .7rem;
+    }
+    
+    .lts-filter-item--menu {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    input[type=checkbox] {
+        width: 1rem;
+        height: 1rem;
+        background: white;
+    }
 }
 
 @media screen and (min-width: 400px) {
     .lts-filter-page {
+        display: none;
+    }
+
+    .lts-show-filter-mobile {
         display: none;
     }
 }
