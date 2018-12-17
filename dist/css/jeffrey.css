@@ -328,7 +328,6 @@ a {
 .lts-icon {
   width: 1rem;
   height: 1rem;
-  margin-top: .25rem;
   padding: 0 .25rem;
 }
 
@@ -746,6 +745,10 @@ input[type="radio"] {
 
 .lts-b-white {
   background: white;
+}
+
+.lts-icon--margin-top {
+  margin-top: .25rem;
 }
 
 .m-1 {
