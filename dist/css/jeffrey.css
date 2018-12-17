@@ -328,6 +328,7 @@ a {
 .lts-icon {
   width: 1rem;
   height: 1rem;
+  margin-top: .25rem;
   padding: 0 .25rem;
 }
 
@@ -591,8 +592,8 @@ input[type="radio"] {
   position: relative;
   top: 0;
   left: 0;
-  width: 1rem;
-  height: 1rem;
+  min-width: 1rem;
+  min-height: 1rem;
   margin-right: 1rem;
   border: 1px solid #5a5a5a;
   border-radius: 1%;
@@ -765,6 +766,21 @@ input[type="radio"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.lts-flex--between {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lts-filter-container--extra {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  max-width: 960px;
 }
 
 .m-ud-2 {
@@ -1150,8 +1166,8 @@ input[type=checkbox] {
     padding-left: 0;
   }
   input[type=checkbox] {
-    width: 1rem;
-    height: 1rem;
+    min-width: 1rem;
+    min-height: 1rem;
     background: white;
   }
 }
