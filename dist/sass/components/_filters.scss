@@ -528,6 +528,59 @@ input[type=checkbox] {
     display: none;
 }
 
+
+// SIDE FILTER CONTAINER
+
+.lts-container-side-menu {
+    position: relative;
+    top: 1rem;
+    left: .5rem;
+    min-width: 240px;
+}
+
+.lts-container-side-menu--hide {
+    display: none;
+}
+
+.lts-container-side-menu li {
+    margin-bottom: .5rem;
+    margin-left: .5rem;
+    color: black;
+}
+
+.lts-container-side-menu a,
+.lts-container-side-menu a:link,
+.lts-container-side-menu a:visited,
+.lts-container-side-menu a:hover,
+.lts-container-side-menu a:active {
+    color: black;
+    font-size: 1rem;
+}
+
+.lts-container-side-menu a:link {
+    text-decoration: none;
+}
+
+.lts-container-side-menu a:visited {
+    text-decoration: none;
+}
+
+.lts-container-side-menu a:hover {
+    text-decoration: underline;
+}
+
+.lts-container-side-menu a:active {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .lts-container-side-menu--active {
+        display: block;
+    }
+
+}
+
 @media screen and (max-width: 399px) {
     .lts-filter-lg {
         display: none;
