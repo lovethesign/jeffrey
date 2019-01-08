@@ -9,6 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp dist",
+    "develop": "gulp",
     "catalog-build": "catalog build && gulp catalog",
     "catalog-build-github-pages": "catalog build --public-url='https://lovethesign.github.io/jeffrey/' && gulp catalog",
     "catalog-build-css": "gulp catalog"
