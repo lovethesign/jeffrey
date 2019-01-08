@@ -56,3 +56,9 @@ gulp.task('dist:styles:src', function () {
     return gulp.src(['./src/styles/**/*', '!src/styles/index.scss'])
         .pipe(gulp.dest(path.join('./.tmp/dist', 'sass')));
 });
+
+gulp.task('sass-watch', function() {
+    gulp.watch('./src/styles/**/*.scss', ['dist:build']);
+});
+
+gulp.task('default', ['dist:build', 'sass-watch']);
