@@ -26,6 +26,7 @@
 
 .#{$prefix}-product-info h1 {
     margin-bottom: 0;
+    color: $color__black;
     font-family: sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
@@ -56,10 +57,12 @@
 }
 
 .#{$prefix}-product-price-sell--px {
+    margin-right: 8px;
     font-size: 18px;
 }
 
 .#{$prefix}-product-price-original {
+    margin-right: $layout-3xs;
     font-family: sans-serif;
     font-size: 1rem;
     font-weight: lighter;
@@ -67,10 +70,12 @@
 }
 
 .#{$prefix}-product-price-original--px {
+    margin-right: 8px;
     font-size: 16px;
 }
 
 .#{$prefix}-product-price-discount {
+    margin-right: $layout-3xs;
     color: rgb(168, 0, 0);
     font-family: sans-serif;
     font-size: 1rem;
@@ -78,5 +83,6 @@
 }
 
 .#{$prefix}-product-price-discount--px {
+    margin-right: 8px;
     font-size: 16px;
 }
