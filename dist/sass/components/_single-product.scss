@@ -1,0 +1,60 @@
+/*
+-----------------  CSS RESET EXCLUSIVE FOR LOVETHESIGN
+*/
+
+.#{$prefix}-css-reset a {
+    text-decoration: none;   
+}
+
+.#{$prefix}-css-reset a:visited {
+    color: inherit;
+}
+
+/*
+-----------------  LAYOUT HELPER
+*/
+
+/*
+-----------------  PRODUCT PAGE
+*/
+
+/* TITLE & PRICING */
+
+.#{$prefix}-product-info-title {
+    margin-bottom: .5rem;
+}
+
+.#{$prefix}-product-info h1 {
+    margin-bottom: 0;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.#{$prefix}-product-brand,
+.#{$prefix}-product-designer {
+    color: darkgrey;
+    font-family: sans-serif;
+    font-size: .825rem;
+    font-weight: 300;
+}
+
+.#{$prefix}-product-price-sell {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.#{$prefix}-product-price-original {
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+.#{$prefix}-product-price-discount {
+    color: rgb(168, 0, 0);
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}

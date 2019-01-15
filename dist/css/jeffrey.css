@@ -1184,3 +1184,60 @@ a {
 .lts-noscroll {
   overflow: hidden;
 }
+
+/*
+-----------------  CSS RESET EXCLUSIVE FOR LOVETHESIGN
+*/
+.lts-css-reset a {
+  text-decoration: none;
+}
+
+.lts-css-reset a:visited {
+  color: inherit;
+}
+
+/*
+-----------------  LAYOUT HELPER
+*/
+/*
+-----------------  PRODUCT PAGE
+*/
+/* TITLE & PRICING */
+.lts-product-info-title {
+  margin-bottom: .5rem;
+}
+
+.lts-product-info h1 {
+  margin-bottom: 0;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.lts-product-brand,
+.lts-product-designer {
+  color: darkgrey;
+  font-family: sans-serif;
+  font-size: .825rem;
+  font-weight: 300;
+}
+
+.lts-product-price-sell {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.lts-product-price-original {
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+
+.lts-product-price-discount {
+  color: #a80000;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
