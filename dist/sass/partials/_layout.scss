@@ -16,6 +16,7 @@ $breakpoints: (   // multiple values for one 'key' = $brekpoints
 
 // Layout setup
 
+$gutter--small: $spacing-base * 0.25;    // 4px
 $gutter: $spacing-base * 0.5;            // 8px
 $gutter--medium: $spacing-base;          // 16px
 $gutter--large: $spacing-base * 1.5;     // 24px
