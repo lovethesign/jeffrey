@@ -52,17 +52,17 @@
     font-weight: bolder;
 }
 
-label {
-    display: flex;
-    padding: 0.5rem 0;
-}
+// label {
+//     display: flex;
+//     padding: 0.5rem 0;
+// }
 
-input[type="checkbox"],
-input[type="radio"]{
-    flex: none;
-    width: auto;
-    margin-right: .5rem;
-}
+// input[type="checkbox"],
+// input[type="radio"]{
+//     flex: none;
+//     width: auto;
+//     margin-right: .5rem;
+// }
 
 .#{$prefix}-filter-item {
     display: flex;
@@ -397,13 +397,13 @@ input[type="radio"]{
 }
 
 
-input[type=range]::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: rgb(206, 84, 28);
-    cursor: pointer;
-}
+// input[type=range]::-moz-range-thumb {
+//     width: 25px;
+//     height: 25px;
+//     border-radius: 50%;
+//     background: rgb(206, 84, 28);
+//     cursor: pointer;
+// }
 
 .lts-range-container {
     display: flex;
@@ -524,9 +524,9 @@ input[type=range]::-moz-range-thumb {
     min-width: 100px;
 }
 
-input[type=checkbox] {
-    display: none;
-}
+// input[type=checkbox] {
+//     display: none;
+// }
 
 
 // SIDE FILTER CONTAINER
@@ -615,11 +615,11 @@ input[type=checkbox] {
         padding-left: 0;
     }
     
-    input[type=checkbox] {
-        min-width: 1rem;
-        min-height: 1rem;
-        background: white;
-    }
+    // input[type=checkbox] {
+    //     min-width: 1rem;
+    //     min-height: 1rem;
+    //     background: white;
+    // }
 }
 
 @media screen and (min-width: 400px) {
