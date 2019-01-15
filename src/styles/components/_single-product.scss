@@ -21,28 +21,42 @@
 /* TITLE & PRICING */
 
 .#{$prefix}-product-info-title {
-    margin-bottom: .5rem;
+    margin-bottom: $layout-2xs;
 }
 
 .#{$prefix}-product-info h1 {
     margin-bottom: 0;
     font-family: sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+.#{$prefix}-product-info--px h1 {
+    font-size: 24px;
 }
 
 .#{$prefix}-product-brand,
 .#{$prefix}-product-designer {
     color: darkgrey;
     font-family: sans-serif;
-    font-size: .825rem;
+    font-size: .75rem;
     font-weight: 300;
 }
 
+.#{$prefix}-product-brand--px,
+.#{$prefix}-product-designer--px {
+    font-size: 12px;
+}
+
 .#{$prefix}-product-price-sell {
+    margin-right: $layout-3xs;
     font-family: sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.125rem;
     font-weight: lighter;
+}
+
+.#{$prefix}-product-price-sell--px {
+    font-size: 18px;
 }
 
 .#{$prefix}-product-price-original {
@@ -52,9 +66,17 @@
     text-decoration: line-through;
 }
 
+.#{$prefix}-product-price-original--px {
+    font-size: 16px;
+}
+
 .#{$prefix}-product-price-discount {
     color: rgb(168, 0, 0);
     font-family: sans-serif;
     font-size: 1rem;
     font-weight: 500;
+}
+
+.#{$prefix}-product-price-discount--px {
+    font-size: 16px;
 }
