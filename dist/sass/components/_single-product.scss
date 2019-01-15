@@ -1,6 +1,6 @@
-/*
------------------  CSS RESET EXCLUSIVE FOR LOVETHESIGN
-*/
+//----------------------------------
+// CSS RESET ENABLER FOR LOVETHESIGN
+//----------------------------------
 
 .#{$prefix}-css-reset a {
     text-decoration: none;   
@@ -10,15 +10,13 @@
     color: inherit;
 }
 
-/*
------------------  LAYOUT HELPER
-*/
+// LAYOUT HELPER
 
-/*
------------------  PRODUCT PAGE
-*/
+//----------------------------------
+// PRODUCT PAGE
+//----------------------------------
 
-/* TITLE & PRICING */
+// TITLE & PRICING
 
 .#{$prefix}-product-info-title {
     margin-bottom: $layout-2xs;
@@ -51,6 +49,7 @@
 
 .#{$prefix}-product-price-sell {
     margin-right: $layout-3xs;
+    color: $color__black;
     font-family: sans-serif;
     font-size: 1.125rem;
     font-weight: lighter;

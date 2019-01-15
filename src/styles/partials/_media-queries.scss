@@ -25,3 +25,40 @@
         margin: 0 1.5% 1.5rem;
     }
 }
+
+//----------------------------------
+// MEDIA QUERIES FOR GALLERY
+//----------------------------------
+
+@media screen and (min-width: 768px) {
+    
+    .#{$prefix}-gallery {
+        justify-content: left;
+        max-width: 400px;
+        margin: 0;
+    }
+
+    .#{$prefix}-product-section {
+        display: flex;
+    }
+
+    .#{$prefix}-product-info {
+        margin-left: 1.5rem;  // 24px
+    }
+
+    .#{$prefix}-product-info--px {
+        margin-left: 24px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+
+    .#{$prefix}-gallery {
+        flex: 1;
+        max-width: 540px;
+    }
+
+    .#{$prefix}-gallery-main-img img {
+        max-width: 540px;
+    }
+}
