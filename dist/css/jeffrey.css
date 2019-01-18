@@ -112,6 +112,39 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .lts-gallery {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    max-width: 400px;
+    margin: 0;
+  }
+  .lts-product-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .lts-product-info {
+    margin-left: 1.5rem;
+  }
+  .lts-product-info--px {
+    margin-left: 24px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .lts-gallery {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    max-width: 540px;
+  }
+  .lts-gallery-main-img img {
+    max-width: 540px;
+  }
+}
+
 .lts-listing-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1181,9 +1214,6 @@
   overflow: hidden;
 }
 
-/*
------------------  CSS RESET EXCLUSIVE FOR LOVETHESIGN
-*/
 .lts-css-reset a {
   text-decoration: none;
 }
@@ -1192,13 +1222,6 @@
   color: inherit;
 }
 
-/*
------------------  LAYOUT HELPER
-*/
-/*
------------------  PRODUCT PAGE
-*/
-/* TITLE & PRICING */
 .lts-product-info-title {
   margin-bottom: 0.5rem;
 }
@@ -1230,6 +1253,7 @@
 
 .lts-product-price-sell {
   margin-right: 0.25rem;
+  color: #000;
   font-family: sans-serif;
   font-size: 1.125rem;
   font-weight: lighter;
@@ -1264,4 +1288,92 @@
 .lts-product-price-discount--px {
   margin-right: 8px;
   font-size: 16px;
+}
+
+.lts-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.lts-gallery-main-img {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  padding-top: 100%;
+  background-color: #bebebe;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+
+.lts-gallery-main-img img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+.lts-gallery-thumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+}
+
+.lts-gallery-thumbs::-webkit-scrollbar {
+  display: none;
+}
+
+.lts-gallery-thumb-video {
+  position: relative;
+}
+
+.lts-icon--video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  margin-top: -20px;
+  margin-left: -28px;
+}
+
+.lts-gallery-thumb-img {
+  max-width: 72px;
+  height: 72px;
+  margin-top: .5rem;
+  margin-right: .5rem;
+  border: 1px solid #fff;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.lts-gallery-thumb-img:hover {
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.lts-gallery-thumb-img:active {
+  opacity: .8;
+}
+
+.lts-gallery-thumb-img--px {
+  margin-top: 8px;
+  margin-right: 8px;
 }
