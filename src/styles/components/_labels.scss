@@ -1,0 +1,33 @@
+//----------------------------------
+// LABELS
+//----------------------------------
+
+.#{$prefix}-label {
+    display: inline-block;
+    margin-right: .25rem;
+    padding: .25rem .5rem;
+    border: 1px solid $color__black;
+    border-radius: 0px;
+    color: $color__black;
+    font-family: sans-serif;
+    font-size: .75rem;
+    text-align: center;
+}
+
+.#{$prefix}-label--px {
+    margin-right: 4px;
+    padding: 4px 8px;
+    border: 1px solid $color__black;
+    border-radius: 0px;
+    font-size: 10px;
+}
+
+.#{$prefix}-label--primary {
+    border: 1px solid $color-brand;
+    color: $color-brand;
+}
+
+.#{$prefix}-label--secondary {
+    border: 1px solid $color-brand-secondary;
+    color: $color-brand-secondary;
+}
