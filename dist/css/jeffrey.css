@@ -1377,3 +1377,20 @@
   margin-top: 8px;
   margin-right: 8px;
 }
+
+.lts-add-lovelist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: sans-serif;
+}
+
+.lts-btn__icon--right {
+  margin-right: .5rem;
+}

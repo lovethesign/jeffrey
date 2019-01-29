@@ -1,0 +1,14 @@
+//----------------------------------
+// LOVELIST
+//----------------------------------
+
+.#{$prefix}-add-lovelist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.#{$prefix}-btn__icon--right {
+    margin-right: .5rem;
+}
