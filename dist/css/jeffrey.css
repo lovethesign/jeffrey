@@ -1436,3 +1436,33 @@
 .lts-container-side-menu a:active {
   text-decoration: underline;
 }
+
+.lts-label {
+  display: inline-block;
+  margin-right: .25rem;
+  padding: .25rem .5rem;
+  border: 1px solid #000;
+  border-radius: 0px;
+  color: #000;
+  font-family: sans-serif;
+  font-size: .75rem;
+  text-align: center;
+}
+
+.lts-label--px {
+  margin-right: 4px;
+  padding: 4px 8px;
+  border: 1px solid #000;
+  border-radius: 0px;
+  font-size: 10px;
+}
+
+.lts-label--primary {
+  border: 1px solid #DF5566;
+  color: #DF5566;
+}
+
+.lts-label--secondary {
+  border: 1px solid #2D3033;
+  color: #2D3033;
+}
