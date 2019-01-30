@@ -1,0 +1,37 @@
+//----------------------------------
+// PRODUCT DESCRIPTION
+//----------------------------------
+
+.#{$prefix}-info-box {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 .5rem 0 .5rem;
+    border-top: 1px solid $lts-color__gray-30;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.#{$prefix}-info-box__content {
+    margin: .5rem;
+}
+
+.#{$prefix}-info-box__title {
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0;
+    font-size: 1rem;
+}
+
+.#{$prefix}-info-box__element {
+    margin-top: .25rem;
+}
+
+.#{$prefix}-info-box__element-title {
+    font-size: .75rem;
+    font-weight: bolder;
+}
+
+.#{$prefix}-info-box__element-descr {
+    font-size: .75rem;
+    font-weight: 400;
+}
