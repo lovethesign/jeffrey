@@ -1,0 +1,23 @@
+// PARTIALS
+
+@import "partials/variables";
+@import "partials/colors";
+@import "partials/layout";
+@import "partials/spacing";
+@import "partials/media-queries";
+@import "partials/mixins";
+
+// COMPONENTS
+
+@import "components/card";
+@import "components/loader";
+@import "components/filters";
+@import "components/single-product";
+@import "components/gallery";
+@import "components/accordion";
+@import "components/banner";
+@import "components/buttons";
+@import "components/pagination";
+@import "components/side-filters";
+@import "components/slider";
+@import "components/labels";
