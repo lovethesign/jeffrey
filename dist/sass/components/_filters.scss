@@ -30,10 +30,8 @@
 }
 
 .#{$prefix}-filter__body {
-    height: 100%;
-    max-height: 55%;
     padding-left: .5rem;
-    border-bottom: 1px solid $lts-color__gray-20;
+    box-sizing: border-box;
 }
 
 .#{$prefix}-filters__wrapper {
@@ -41,9 +39,10 @@
     position: absolute;
     flex-wrap: nowrap;
     width: 100%;
-    max-height: 55%;
+    height: calc(100% - 248px);
     background: $color__white;
     overflow-x: auto;
+    box-sizing: border-box;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     &::-webkit-scrollbar {
@@ -52,17 +51,23 @@
 }
 
 .#{$prefix}-filter__slider-box {
-    flex: 1;
+    height: 100%;
+    max-height: 80px;
+    border-bottom: 1px solid $lts-color__gray-20;
 }
 
 .#{$prefix}-filter__footer {
     display: flex;
-    flex: 1 1 auto;
-    align-items: center;
+    position: absolute;
+    bottom: 0;
     justify-content: center;
-    max-height: 80px;
+    width: 100%;
+    height: 100%;
+    max-height: 60px;
+    margin-top: auto;
     border-top: 1px solid $lts-color__gray-20;
     background: $lts-color__gray-10;
+    box-sizing: border-box;
     & > button {
         margin: .5rem;
         padding: .75rem 1.5rem;
