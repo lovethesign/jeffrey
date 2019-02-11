@@ -15,6 +15,11 @@ const pages = [
         path: '/grid',
         title: 'Grid',
         content: pageLoader(() => import("./Elements/GRID.md"))
+      },
+      {
+        path: '/filter-mobile',
+        title: 'Filter Mobile',
+        content: pageLoader(() => import("./Elements/FILTER_MOBILE.md"))
       }
     ]
   },
