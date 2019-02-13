@@ -5,6 +5,7 @@
 @import "partials/layout";
 @import "partials/spacing";
 @import "partials/media-queries";
+@import "partials/mixins";
 
 // COMPONENTS
 
@@ -18,4 +19,5 @@
 @import "components/buttons";
 @import "components/pagination";
 @import "components/side-filters";
+@import "components/slider";
 @import "components/labels";

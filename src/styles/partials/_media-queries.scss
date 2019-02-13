@@ -4,11 +4,15 @@
 
 @import "variables";
 
+//----------------------------------
+// MEDIA QUERIES FOR GRID ITEMS
+//----------------------------------
 
 @media screen and (min-width: 320px) {
     .#{$prefix}-grid-item--3,
     .#{$prefix}-grid-item--4 {
         flex: 0 0 47%;
+        margin: 0 1.5% 1.5rem;
     }
 }
 
@@ -22,7 +26,6 @@
 @media screen and (min-width: 700px) {
     .#{$prefix}-grid-item--4 {
         flex: 0 0 22%;
-        margin: 0 1.5% 1.5rem;
     }
 }
 
@@ -67,71 +70,23 @@
 // MEDIA QUERIES FOR FILTERS
 //----------------------------------
 
-@media (min-width: 960px) {
-    .lts-filter-container {
-        justify-content: space-between;
-        max-width: 960px;
-    }
-
-    .lts-filter-container:nth-last-child(1) {
-        justify-content: flex-start;
+@media screen and (min-width: 432px) {
+    .#{$prefix}-filters--mobile {
+        display: none;
     }
 }
+
+@media screen and (max-width: 431px) {
+    .#{$prefix}-filters--desktop {
+        display: none;
+    }
+}
+
+// SIDE FILTERS
 
 @media screen and (min-width: 1200px) {
 
-    .lts-container-side-menu--active {
+    .#{$prefix}-container__side-menu {
         display: block;
-    }
-}
-
-@media screen and (max-width: 399px) {
-    .lts-filter-lg {
-        display: none;
-    }
-
-    .lts-filter-container {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        min-height: 3rem;
-        background: rgb(240, 240, 240);
-    }
-    
-    .lts-filter-container-mobile {
-        display: flex;
-        flex: 0 0 31.3333%;
-        align-items: center;
-        justify-content: center;
-        margin: 0 .5%;
-    }
-    
-    .lts-btn--fast-shipping,
-    .lts-btn--lovepromo,
-    .lts-btn--filters {
-        font-size: .7rem;
-    }
-    
-    .lts-filter-item--menu {
-        padding-right: 0;
-        padding-left: 0;
-    }
-    
-    // input[type=checkbox] {
-    //     min-width: 1rem;
-    //     min-height: 1rem;
-    //     background: white;
-    // }
-}
-
-@media screen and (min-width: 400px) {
-    .lts-filter-page {
-        display: none;
-    }
-
-    .lts-show-filter-mobile {
-        display: none;
     }
 }

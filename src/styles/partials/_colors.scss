@@ -7,13 +7,15 @@
 $color-brand: #DF5566;
 $color-brand-secondary: #2D3033;
 
+$color-brand--dark: #b13c4a;
 //----------------------------------
 // STANDARD COLORS
 //----------------------------------
 
 $color__black: #000;
 $color__white: #fff;
-
+$color__black--safe: #222;      // avoid use of true black
+$color__white--safe: #efefef;   // avoid use of true white
 //----------------------------------
 // GREY
 //----------------------------------
@@ -28,3 +30,16 @@ $lts-color__gray-70: #565656;
 $lts-color__gray-80: #3d3d3d;
 $lts-color__gray-90: #282828;
 $lts-color__gray-100: #171717;
+
+//----------------------------------
+// BUTTONS
+//----------------------------------
+
+// standard button
+$color__primary: $color-brand;
+$color__secondary: $color-brand-secondary;
+// :hover effect
+$color__secondary--dark: $color__black--safe;
+
+$color-btn__text: $color__white;
+$color-btn__text--dark: $color__black--safe;
