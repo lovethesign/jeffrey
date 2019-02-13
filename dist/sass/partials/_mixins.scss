@@ -1,0 +1,38 @@
+//----------------------------------
+// MIXINS
+//----------------------------------
+
+// Mixins: BUTTONS
+
+@mixin button-reset {
+    display: inline-block;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+// Mixins: FLEXBOX
+
+@mixin flex-justify($value) {
+    display: flex;
+    justify-content: $value;
+}
+
+@mixin flex-align($value) {
+    align-items: $value;
+}
+
+@mixin flex-direction($direction) {
+    @if $direction == column {
+        flex-direction: column;
+    }
+    @else {
+        flex-direction: row;
+    }
+}
