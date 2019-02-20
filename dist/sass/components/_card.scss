@@ -1,132 +1,105 @@
-.#{$prefix}-listing-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+//----------------------------------
+// CARD
+//----------------------------------
+
+.#{$prefix}-card {
+
+    &__container {
+        position: relative;
+        flex: 0 0 100%;
+        max-width: 320px;
+        height: auto;
+        margin-bottom: 1.5rem;  // 24px
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+    
+    &__container svg {
+        display: inline-block;
+    }
+
+    &__img {
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+        background-color: $lts-color__gray-10;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: contain;
+        overflow: hidden;
+
+        & img {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            max-width: 350px;
+            color: transparent;
+            vertical-align: bottom;
+        }
+    }
+
+    &__overflow-label {
+        position: absolute;
+        right: 0;
+        bottom: 1rem;
+        padding: .5rem 1rem;
+        background-color: $color__white;
+    }
+
+    &__info-container a svg {
+        position: absolute;
+        right: .5rem;
+        padding: .5rem;
+    }
+
+    &__product-title {
+        display: block;
+        min-height: 3.5rem;
+        padding-top: .5rem;
+        color: $color__black;
+        font-size: 1rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__product-brand {
+        color: $lts-color__gray-40;
+        font-family: "Merriweather",serif;
+        font-size: .625rem; // 10px
+        font-style: italic;
+    }
+
+    &__product-price {
+        display: inline-block;
+
+        &--original {
+            color: $lts-color__gray-90;
+            font-size: .75rem; // 12px
+            text-decoration: line-through;
+        }
+
+        &--discount {
+            color: $lts-color__price-discount;
+            font-size: .75rem;
+            font-weight: 700;
+        }
+
+        &--sell {
+            color: $lts-color__gray-90;
+            font-size: .8125rem;  // 10px
+            font-weight: lighter;
+        }
+    }
+
+    &__extras {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
 }
 
-.#{$prefix}-card-container {
-    /* margin: auto; */
-    position: relative;
-    flex: 0 0 100%;
-    max-width: 320px;
-    height: auto;
-    margin-bottom: 24px;
-}
+// LABELS
 
-.#{$prefix}-card-container svg {
-    display: inline-block;
-}
-
-.#{$prefix}-item-info {
-    padding-top: .5rem;
-}
-
-.#{$prefix}-card-info-container a svg {
-    position: absolute;
-    right: .5rem;
-    padding: .5rem;
-}
-
-.#{$prefix}-card-img {
-    position: relative;
-    width: 100%;
-    padding-top: 100%;
-    background-color: #f3f3f3;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: contain;
-    overflow: hidden;
-}
-
-.#{$prefix}-card-img img {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    max-width: 350px;
-    color: transparent;
-    vertical-align: bottom;
-}
-
-.#{$prefix}-card-label {
-    position: absolute;
-    right: 0;
-    bottom: 1rem;
-    padding: .5rem 1rem;
-    background-color: white;
-}
-
-.#{$prefix}-item-title {
-    display: block;
-}
-
-.#{$prefix}-card-price,
-.#{$prefix}-card-price-orig,
-.#{$prefix}-card-price-discount {
-    display: inline-block;
-}
-
-.#{$prefix}-card-price-orig {
-    text-decoration: line-through;
-}
-
-
-// ---------------------------------------------
-// - TEMPORARY CSS STYLE
-// ---------------------------------------------
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
-
-.lts-card-container {
-    font-family: "Open Sans", sans-serif;
-}
-
-.lts-card-label {
-    background-color: rgb(250, 250, 250);
-    color: rgb(105, 105, 105);
-    font-size: 0.6rem;
-    font-weight: 700;
-}
-
-.lts-item-brand {
-    color: darkgrey;
-    font-family: "Merriweather",serif;
-    font-size: .6rem;
-    font-style: italic;
-}
-
-.lts-item-title {
-    min-height: 3.5rem;
-    padding-top: .5rem;
-    color: black;
-    font-size: .8rem;
-    text-overflow: ellipsis;
-    // white-space: nowrap;
-    overflow: hidden;
-}
-
-.lts-item-price-sell {
-    color: rgb(31, 31, 31);
-    font-size: .8rem;
-    font-weight: lighter;
-}
-
-.lts-item-price-original {
-    color: gray;
-    font-size: .7rem;
-    text-decoration: line-through;
-}
-
-.lts-item-price-discount {
-    color: rgb(168, 0, 0);
-    font-size: .7rem;
-    font-weight: 700;
-}
-
-.lts-card-extras {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-}
 
 .lts-card-extra-love,
 .lts-card-extra-fast-ship,
@@ -175,9 +148,4 @@
     width: 1rem;
     height: 1rem;
     padding: 0 .25rem;
-}
-
-.lts-grid-1200 {
-    max-width: 1200px;
-    margin: auto;
 }
