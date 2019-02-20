@@ -12,22 +12,44 @@
     font-family: sans-serif;
     font-size: .75rem;
     text-align: center;
-}
+    box-sizing: border-box;
 
-.#{$prefix}-label--px {
-    margin-right: 4px;
-    padding: 4px 8px;
-    border: 1px solid $color__black;
-    border-radius: 0px;
-    font-size: 10px;
-}
+    &--reverse {
+        border: 1px solid transparent;
+        background: $color__black;
+        color: $color__white;
+    }
 
-.#{$prefix}-label--primary {
-    border: 1px solid $color-brand;
-    color: $color-brand;
-}
+    &--reverse &--primary {
+        border: 1px solid transparent;
+        background: $color-brand;
+        color: $color__white;
+    }
 
-.#{$prefix}-label--secondary {
-    border: 1px solid $color-brand-secondary;
-    color: $color-brand-secondary;
+    &--reverse &--secondary {
+        border: 1px solid transparent;
+        background: $color-brand-secondary;
+        color: $color__white;
+    }
+
+    &--px {
+        margin-right: 4px;
+        padding: 4px 8px;
+        border-radius: 0px;
+        font-size: 10px;
+    }
+
+    &--uppercase {
+        text-transform: uppercase;
+    }
+
+    &--primary {
+        border: 1px solid $color-brand;
+        color: $color-brand;
+    }
+
+    &--secondary {
+        border: 1px solid $color-brand-secondary;
+        color: $color-brand-secondary;
+    }
 }
