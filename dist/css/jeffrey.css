@@ -1338,14 +1338,37 @@
   font-family: sans-serif;
   font-size: .75rem;
   text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.lts-label--reverse {
+  border: 1px solid transparent;
+  background: #000;
+  color: #fff;
+}
+
+.lts-label--reverse .lts-label--primary {
+  border: 1px solid transparent;
+  background: #DF5566;
+  color: #fff;
+}
+
+.lts-label--reverse .lts-label--secondary {
+  border: 1px solid transparent;
+  background: #2D3033;
+  color: #fff;
 }
 
 .lts-label--px {
   margin-right: 4px;
   padding: 4px 8px;
-  border: 1px solid #000;
   border-radius: 0px;
   font-size: 10px;
+}
+
+.lts-label--uppercase {
+  text-transform: uppercase;
 }
 
 .lts-label--primary {
