@@ -49,6 +49,7 @@
         padding: .5rem 1rem;
         background-color: $color__white;
         color: $lts-color__gray-60;
+        font-size: .8125rem;
 
         &:hover {
             color: $lts-color__gray-90;
@@ -57,6 +58,7 @@
         &--px {
             bottom: 16px;
             padding: 8px 16px;
+            font-size: 13px;
         }
     }
 
