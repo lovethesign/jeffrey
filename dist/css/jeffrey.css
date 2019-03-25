@@ -307,8 +307,8 @@
 }
 
 .lts-card__product-title {
-  display: block;
-  min-height: 3.5rem;
+  display: inline-block;
+  height: 3.5rem;
   padding-top: .5rem;
   color: #000;
   font-size: 1rem;
@@ -317,7 +317,7 @@
 }
 
 .lts-card__product-title--px {
-  min-height: 56px;
+  height: 56px;
   padding-top: 8px;
   font-size: 12.8px;
 }
