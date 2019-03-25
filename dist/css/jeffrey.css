@@ -390,6 +390,20 @@
   padding: 0px 4px;
 }
 
+.lts-card__container--lovelist path.lts-card__icon--transparent {
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  fill: #202020;
+}
+
+.lts-card__icon--transparent {
+  fill: transparent;
+}
+
+.lts-card__icon--fill {
+  fill: #202020;
+}
+
 @-webkit-keyframes lts-animate-rotate {
   from {
     -webkit-transform: rotate(0deg);

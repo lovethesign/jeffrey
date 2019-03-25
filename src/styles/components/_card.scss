@@ -150,3 +150,22 @@
         }
     }
 }
+
+//----------------------------------
+// HEART ICON FOR CARD
+//----------------------------------
+
+.#{$prefix}-card {
+    &__container--lovelist path.#{$prefix}-card__icon--transparent {
+        transition: all ease-in-out .3s;
+        fill: #202020;
+    }
+
+    &__icon--transparent {
+        fill: transparent;
+    }
+  
+    &__icon--fill {
+        fill: #202020;
+    }
+}
