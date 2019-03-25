@@ -307,7 +307,7 @@
 }
 
 .lts-card__product-title {
-  display: inline-block;
+  display: block;
   height: 3.5rem;
   padding-top: .5rem;
   color: #000;
