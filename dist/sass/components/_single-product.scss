@@ -1,0 +1,87 @@
+//----------------------------------
+// CSS RESET ENABLER FOR LOVETHESIGN
+//----------------------------------
+
+.#{$prefix}-css-reset a {
+    text-decoration: none;   
+}
+
+.#{$prefix}-css-reset a:visited {
+    color: inherit;
+}
+
+// LAYOUT HELPER
+
+//----------------------------------
+// PRODUCT PAGE
+//----------------------------------
+
+// TITLE & PRICING
+
+.#{$prefix}-product-info-title {
+    margin-bottom: $layout-2xs;
+}
+
+.#{$prefix}-product-info h1 {
+    margin-bottom: 0;
+    color: $color__black;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.#{$prefix}-product-info--px h1 {
+    font-size: 24px;
+}
+
+.#{$prefix}-product-brand,
+.#{$prefix}-product-designer {
+    color: darkgrey;
+    font-family: sans-serif;
+    font-size: .75rem;
+    font-weight: 300;
+}
+
+.#{$prefix}-product-brand--px,
+.#{$prefix}-product-designer--px {
+    font-size: 12px;
+}
+
+.#{$prefix}-product-price-sell {
+    margin-right: $layout-3xs;
+    color: $color__black;
+    font-family: sans-serif;
+    font-size: 1.125rem;
+    font-weight: lighter;
+}
+
+.#{$prefix}-product-price-sell--px {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.#{$prefix}-product-price-original {
+    margin-right: $layout-3xs;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+.#{$prefix}-product-price-original--px {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.#{$prefix}-product-price-discount {
+    margin-right: $layout-3xs;
+    color: rgb(168, 0, 0);
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.#{$prefix}-product-price-discount--px {
+    margin-right: 8px;
+    font-size: 16px;
+}

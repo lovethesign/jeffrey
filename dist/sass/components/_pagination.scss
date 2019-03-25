@@ -1,0 +1,37 @@
+//----------------------------------
+// PAGINATION
+//----------------------------------
+
+.#{$prefix}-pagination {
+    display: inline-flex;
+}
+
+.#{$prefix}-pagination a {
+    flex: 1;
+    justify-content: center;
+    padding: .5rem 1rem;
+    border: 1px solid $color__white;
+    color: $lts-color__gray-40;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.#{$prefix}-pagination a:hover {
+    border: 1px solid $color__black;
+    background: transparent;
+    color: $color__black;
+    box-sizing: border-box;
+}
+
+.#{$prefix}-pagination a:active {
+    background: $color__black;
+    color: $color__white;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.#{$prefix}-pagination-active a {
+    background: transparent;
+    color: $color-brand;
+    font-weight: bolder;
+}
