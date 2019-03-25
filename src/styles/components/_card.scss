@@ -90,11 +90,11 @@
     &__product-brand {
         color: $lts-color__gray-40;
         font-family: "Merriweather", serif;
-        font-size: .625rem; // 10px
+        font-size: .8125rem;
         font-style: italic;
 
         &--px {
-            font-size: 10px;
+            font-size: 13px;
         }
     }
 
@@ -103,31 +103,31 @@
 
         &--original {
             color: $lts-color__gray-90;
-            font-size: .75rem; // 12px
+            font-size: 1rem;
             text-decoration: line-through;
 
             &--px {
-                font-size: 12px;
+                font-size: 16px;
             }
         }
 
         &--discount {
             color: $lts-color__price-discount;
-            font-size: .75rem;
+            font-size: 1rem;
             font-weight: 700;
 
             &--px {
-                font-size: 12px;
+                font-size: 16px;
             }
         }
 
         &--sell {
             color: $lts-color__gray-90;
-            font-size: .8125rem;  // 13px
+            font-size: 1.125rem;  // 20px
             font-weight: lighter;
 
             &--px {
-                font-size: 13px;
+                font-size: 20px;
             }
         }
     }
@@ -139,13 +139,13 @@
     }
 
     &__icon {
-        width: 1rem;
-        height: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
         padding: 0 .25rem;
 
         &--px {
-            width: 16px;
-            height: 16px;
+            width: 24px;
+            height: 24px;
             padding: 0px 4px;
         }
     }
