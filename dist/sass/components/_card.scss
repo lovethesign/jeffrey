@@ -12,6 +12,10 @@
         margin-bottom: 1.5rem;  // 24px
         font-family: sans-serif;
         box-sizing: border-box;
+
+        &--px {
+            margin-bottom: 24px;
+        }
     }
     
     &__container svg {
@@ -44,12 +48,22 @@
         bottom: 1rem;
         padding: .5rem 1rem;
         background-color: $color__white;
+
+        &--px {
+            bottom: 16px;
+            padding: 8px 16px;
+        }
     }
 
     &__info-container a svg {
         position: absolute;
         right: .5rem;
         padding: .5rem;
+
+        &--px {
+            right: 8px;
+            padding: 8px;
+        }
     }
 
     &__product-title {
@@ -60,6 +74,12 @@
         font-size: 1rem;
         text-overflow: ellipsis;
         overflow: hidden;
+
+        &--px {
+            min-height: 56px;
+            padding-top: 8px;
+            font-size: 16px;
+        }
     }
 
     &__product-brand {
@@ -67,6 +87,10 @@
         font-family: "Merriweather",serif;
         font-size: .625rem; // 10px
         font-style: italic;
+
+        &--px {
+            font-size: 10px;
+        }
     }
 
     &__product-price {
@@ -76,18 +100,30 @@
             color: $lts-color__gray-90;
             font-size: .75rem; // 12px
             text-decoration: line-through;
+
+            &--px {
+                font-size: 12px;
+            }
         }
 
         &--discount {
             color: $lts-color__price-discount;
             font-size: .75rem;
             font-weight: 700;
+
+            &--px {
+                font-size: 12px;
+            }
         }
 
         &--sell {
             color: $lts-color__gray-90;
-            font-size: .8125rem;  // 10px
+            font-size: .8125rem;  // 13px
             font-weight: lighter;
+
+            &--px {
+                font-size: 13px;
+            }
         }
     }
 
@@ -96,56 +132,16 @@
         flex-flow: column wrap;
         justify-content: center;
     }
-}
 
-// LABELS
+    &__icon {
+        width: 1rem;
+        height: 1rem;
+        padding: 0 .25rem;
 
-
-.lts-card-extra-love,
-.lts-card-extra-fast-ship,
-.lts-card-extra-out-stock {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: .5rem auto auto auto;
-    padding: .25rem .5rem;
-    border-radius: 2px;
-    color: white;
-    font-size: 0.65rem;
-    font-weight: 700;
-}
-
-.lts-card-extra-love--sx,
-.lts-card-extra-fast-ship--sx {
-    margin-left: 0;
-}
-
-.lts-card-extra-love--dx,
-.lts-card-extra-fast-ship--dx {
-    margin-right: 0;
-}
-
-.lts-card-extra-love {
-    background-color: #DF5566;
-}
-
-.lts-card-extra-fast-ship {
-    background-color: rgb(42, 102, 158);
-}
-
-.lts-card-extra-out-stock {
-    border: 1px solid black;
-    background-color: transparent;
-    color: black;
-}
-
-.lts-card-extra-love svg,
-.lts-card-extra-fast-ship svg {
-    fill: white;
-}
-
-.lts-icon {
-    width: 1rem;
-    height: 1rem;
-    padding: 0 .25rem;
+        &--px {
+            width: 16px;
+            height: 16px;
+            padding: 0px 4px;
+        }
+    }
 }

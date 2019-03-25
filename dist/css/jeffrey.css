@@ -247,6 +247,10 @@
           box-sizing: border-box;
 }
 
+.lts-card__container--px {
+  margin-bottom: 24px;
+}
+
 .lts-card__container svg {
   display: inline-block;
 }
@@ -279,10 +283,20 @@
   background-color: #fff;
 }
 
+.lts-card__overflow-label--px {
+  bottom: 16px;
+  padding: 8px 16px;
+}
+
 .lts-card__info-container a svg {
   position: absolute;
   right: .5rem;
   padding: .5rem;
+}
+
+.lts-card__info-container a svg--px {
+  right: 8px;
+  padding: 8px;
 }
 
 .lts-card__product-title {
@@ -295,11 +309,21 @@
   overflow: hidden;
 }
 
+.lts-card__product-title--px {
+  min-height: 56px;
+  padding-top: 8px;
+  font-size: 16px;
+}
+
 .lts-card__product-brand {
   color: #a4a4a4;
   font-family: "Merriweather",serif;
   font-size: .625rem;
   font-style: italic;
+}
+
+.lts-card__product-brand--px {
+  font-size: 10px;
 }
 
 .lts-card__product-price {
@@ -312,16 +336,28 @@
   text-decoration: line-through;
 }
 
+.lts-card__product-price--original--px {
+  font-size: 12px;
+}
+
 .lts-card__product-price--discount {
   color: #8b0606;
   font-size: .75rem;
   font-weight: 700;
 }
 
+.lts-card__product-price--discount--px {
+  font-size: 12px;
+}
+
 .lts-card__product-price--sell {
   color: #282828;
   font-size: .8125rem;
   font-weight: lighter;
+}
+
+.lts-card__product-price--sell--px {
+  font-size: 13px;
 }
 
 .lts-card__extras {
@@ -337,59 +373,16 @@
           justify-content: center;
 }
 
-.lts-card-extra-love,
-.lts-card-extra-fast-ship,
-.lts-card-extra-out-stock {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: .5rem auto auto auto;
-  padding: .25rem .5rem;
-  border-radius: 2px;
-  color: white;
-  font-size: 0.65rem;
-  font-weight: 700;
-}
-
-.lts-card-extra-love--sx,
-.lts-card-extra-fast-ship--sx {
-  margin-left: 0;
-}
-
-.lts-card-extra-love--dx,
-.lts-card-extra-fast-ship--dx {
-  margin-right: 0;
-}
-
-.lts-card-extra-love {
-  background-color: #DF5566;
-}
-
-.lts-card-extra-fast-ship {
-  background-color: #2a669e;
-}
-
-.lts-card-extra-out-stock {
-  border: 1px solid black;
-  background-color: transparent;
-  color: black;
-}
-
-.lts-card-extra-love svg,
-.lts-card-extra-fast-ship svg {
-  fill: white;
-}
-
-.lts-icon {
+.lts-card__icon {
   width: 1rem;
   height: 1rem;
   padding: 0 .25rem;
+}
+
+.lts-card__icon--px {
+  width: 16px;
+  height: 16px;
+  padding: 0px 4px;
 }
 
 @-webkit-keyframes lts-animate-rotate {
@@ -2005,6 +1998,7 @@
   color: #000;
   font-family: sans-serif;
   font-size: .75rem;
+  font-weight: 700;
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2016,23 +2010,11 @@
   color: #fff;
 }
 
-.lts-label--reverse .lts-label--primary {
-  border: 1px solid transparent;
-  background: #DF5566;
-  color: #fff;
-}
-
-.lts-label--reverse .lts-label--secondary {
-  border: 1px solid transparent;
-  background: #2D3033;
-  color: #fff;
-}
-
 .lts-label--px {
   margin-right: 4px;
   padding: 4px 8px;
   border-radius: 0px;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .lts-label--uppercase {
@@ -2047,4 +2029,19 @@
 .lts-label--secondary {
   border: 1px solid #2D3033;
   color: #2D3033;
+}
+
+.lts-label--lovepromo {
+  border: 1px solid #DF5566;
+  color: #DF5566;
+}
+
+.lts-label--fast-shipping {
+  border: 1px solid #2f77bb;
+  color: #2f77bb;
+}
+
+.lts-label--out-of-stock {
+  border: 1px solid #d8521d;
+  color: #d8521d;
 }

@@ -11,6 +11,7 @@
     color: $color__black;
     font-family: sans-serif;
     font-size: .75rem;
+    font-weight: 700;
     text-align: center;
     box-sizing: border-box;
 
@@ -20,23 +21,11 @@
         color: $color__white;
     }
 
-    &--reverse &--primary {
-        border: 1px solid transparent;
-        background: $color-brand;
-        color: $color__white;
-    }
-
-    &--reverse &--secondary {
-        border: 1px solid transparent;
-        background: $color-brand-secondary;
-        color: $color__white;
-    }
-
     &--px {
         margin-right: 4px;
         padding: 4px 8px;
         border-radius: 0px;
-        font-size: 10px;
+        font-size: 12px;
     }
 
     &--uppercase {
@@ -51,5 +40,20 @@
     &--secondary {
         border: 1px solid $color-brand-secondary;
         color: $color-brand-secondary;
+    }
+
+    &--lovepromo {
+        border: 1px solid $lts-color__lovepromo;
+        color: $lts-color__lovepromo;
+    }
+
+    &--fast-shipping {
+        border: 1px solid $lts-color__fast-shipping;
+        color: $lts-color__fast-shipping;
+    }
+
+    &--out-of-stock {
+        border: 1px solid $lts-color__out-of-stock;
+        color: $lts-color__out-of-stock;
     }
 }
