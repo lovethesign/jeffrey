@@ -281,6 +281,11 @@
   bottom: 1rem;
   padding: .5rem 1rem;
   background-color: #fff;
+  color: #6f6f6f;
+}
+
+.lts-card__overflow-label:hover {
+  color: #282828;
 }
 
 .lts-card__overflow-label--px {
@@ -317,7 +322,7 @@
 
 .lts-card__product-brand {
   color: #a4a4a4;
-  font-family: "Merriweather",serif;
+  font-family: "Merriweather", serif;
   font-size: .625rem;
   font-style: italic;
 }

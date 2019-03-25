@@ -48,6 +48,11 @@
         bottom: 1rem;
         padding: .5rem 1rem;
         background-color: $color__white;
+        color: $lts-color__gray-60;
+
+        &:hover {
+            color: $lts-color__gray-90;
+        }
 
         &--px {
             bottom: 16px;
@@ -84,7 +89,7 @@
 
     &__product-brand {
         color: $lts-color__gray-40;
-        font-family: "Merriweather",serif;
+        font-family: "Merriweather", serif;
         font-size: .625rem; // 10px
         font-style: italic;
 
