@@ -58,7 +58,7 @@
         &--px {
             bottom: 16px;
             padding: 8px 16px;
-            font-size: 13px;
+            font-size: 12px;
         }
     }
 
@@ -85,7 +85,7 @@
         &--px {
             min-height: 56px;
             padding-top: 8px;
-            font-size: 16px;
+            font-size: 12.8px;
         }
     }
 
@@ -104,32 +104,36 @@
         display: inline-block;
 
         &--original {
+            padding-left: .5rem;
             color: $lts-color__gray-90;
-            font-size: 1rem;
+            font-size: .8125rem;
             text-decoration: line-through;
 
             &--px {
-                font-size: 16px;
+                padding-left: 8px;
+                font-size: 13px;
             }
         }
 
         &--discount {
+            padding-left: .5rem;
             color: $lts-color__price-discount;
-            font-size: 1rem;
+            font-size: .8125rem;
             font-weight: 700;
 
             &--px {
-                font-size: 16px;
+                padding-left: 8px;
+                font-size: 13px;
             }
         }
 
         &--sell {
             color: $lts-color__gray-90;
-            font-size: 1.125rem;  // 20px
+            font-size: 1rem;  // 20px
             font-weight: lighter;
 
             &--px {
-                font-size: 20px;
+                font-size: 16px;
             }
         }
     }
