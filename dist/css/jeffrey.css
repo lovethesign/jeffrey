@@ -1458,6 +1458,8 @@
   padding: auto;
   overflow: hidden;
   z-index: 2;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
