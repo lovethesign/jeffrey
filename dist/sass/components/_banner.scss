@@ -1,0 +1,36 @@
+//----------------------------------
+// BANNER
+//----------------------------------
+
+.#{$prefix}-banner {
+
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background: #a1a1a1;
+    z-index: 1;
+    box-sizing: border-box;
+
+    & img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        padding: auto;
+        overflow: hidden;
+        z-index: 2;
+        box-sizing: border-box;
+    }
+
+    &__box {
+        display: flex;
+        position: relative;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        margin: auto;
+        background: white;
+        z-index: 10;
+        box-sizing: border-box;
+    }
+}

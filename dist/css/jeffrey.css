@@ -1440,3 +1440,47 @@
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+
+.lts-banner {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background: #a1a1a1;
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.lts-banner img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding: auto;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.lts-banner__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  margin: auto;
+  background: white;
+  z-index: 10;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
