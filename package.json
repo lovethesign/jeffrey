@@ -1,6 +1,6 @@
 {
   "name": "jeffrey-suits",
-  "version": "0.1.62",
+  "version": "0.1.63",
   "description": "jeffrey-suits is a style guide and pattern library for building websites rapidly, designed for maintainability and modularity.",
   "main": "dist/sass/jeffrey.scss",
   "directories": {
