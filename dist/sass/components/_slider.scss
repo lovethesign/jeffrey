@@ -1,0 +1,90 @@
+//----------------------------------
+// SLIDER
+//----------------------------------
+
+.lts-slider__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lts-slider__price-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 64px;
+    min-height: 28px;
+    border: 1px solid black;
+    color: black;
+    font-size: 1.2em;
+}
+
+.lts-btn--slider {
+    display: flex;
+    flex: 1;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+.lts-slider-bar {
+    width: 200px; /* Full-width */
+    height: 4px; /* Specified height */
+    transition: opacity .2s;
+    outline: none; /* Remove outline */
+    background: $color__black;
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+}
+.lts-slider-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.lts-slider-bar::-webkit-slider-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: rgb(206, 84, 28);
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* BUTTON CLASSES */
+
+.lts-range-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.lts-range-box {
+    width: 30px;
+}
+
+// SLIDER MOBILE PRICE CONTAINER
+
+.#{$prefix}-price__container {
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem;
+}
+
+.#{$prefix}-price__box {
+    min-width: 2.5rem;
+    max-width: 3.5rem;
+    min-height: 1.5rem;
+    max-height: 1.5rem;
+    border: 1px solid lightgray;
+    &::placeholder {
+        position: relative;
+        padding-left: .25rem;
+    }
+}
+
+.lts-filter-container-mobile {
+    min-width: 100px;
+}

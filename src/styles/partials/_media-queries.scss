@@ -4,11 +4,15 @@
 
 @import "variables";
 
+//----------------------------------
+// MEDIA QUERIES FOR GRID ITEMS
+//----------------------------------
 
 @media screen and (min-width: 320px) {
     .#{$prefix}-grid-item--3,
     .#{$prefix}-grid-item--4 {
         flex: 0 0 47%;
+        margin: 0 1.5% 1.5rem;
     }
 }
 
@@ -22,7 +26,6 @@
 @media screen and (min-width: 700px) {
     .#{$prefix}-grid-item--4 {
         flex: 0 0 22%;
-        margin: 0 1.5% 1.5rem;
     }
 }
 
@@ -60,5 +63,30 @@
 
     .#{$prefix}-gallery-main-img img {
         max-width: 540px;
+    }
+}
+
+//----------------------------------
+// MEDIA QUERIES FOR FILTERS
+//----------------------------------
+
+@media screen and (min-width: 432px) {
+    .#{$prefix}-filters--mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .#{$prefix}-filters--desktop {
+        display: none;
+    }
+}
+
+// SIDE FILTERS
+
+@media screen and (min-width: 1200px) {
+
+    .#{$prefix}-container__side-menu {
+        display: block;
     }
 }
